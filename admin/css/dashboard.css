@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
+body{
+    background-color: #001;
+    display: flex;
+}
+
+/* menu starts here*/
+.menu{
+    width: 90px;
+    height: 100vh;
+    background-color: #123;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.menu ul li a p{
+    visibility: hidden;
+    transition: 0.5s;
+}
+.menu:hover p{
+    visibility:visible;
+}
+
+.menu:hover{
+    width: 260px;
+}
+.profile{
+   display: flex;
+   align-items: center;
+   gap: 30px;
+}
+.profile h2{
+    font-size: 20px;
+}
+.img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid rgb(255, 255, 255);
+    flex-shrink: 0;
+}
+.img img{
+    width: 100%;
+}
+ ul{
+    list-style: none;
+    position: relative;
+    height: 95%;
+}
+.menu ul li a{
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: 0.5s;
+}
+.menu ul li a:hover,.data-info .box:hover{
+    background-color: #ffffff55;
+}
+.log-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.log-out button{
+    background-color: #a00;
+    width: 100%;
+    font-size: 18px;
+    height: 50px;
+    border-radius: 10px;
+
+}
+.log-out button:hover{
+    background-color: rgb(247, 81, 81);
+
+}
+ul li a i{
+    font-size: 30px;
+}
+
+@media (max-width:900px)
+{
+    body{
+        height: 650px;
+    }
+}
+h3{
+    color:white
+}
+.welcome{
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+table tr:hover{
+    background-color:gray;
+}
